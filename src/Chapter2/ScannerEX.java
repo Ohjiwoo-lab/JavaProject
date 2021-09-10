@@ -1,3 +1,9 @@
+/*
+* Scanner를 이용한 키 입력 연습
+* Scanner를 이용하여 이름, 도시, 나이, 체중, 독신 여부를 입력 받고 다시 출력하는 프로그램
+* Scanner는 입력된는 키 값을 공백으로 구분되는 아이템 단위로 읽어들여 원하는 타입의 값으로 바꾸어 리턴할 수 있는 클래스이다.
+*/
+
 package Chapter2;
 import java.util.Scanner;
 

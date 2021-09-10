@@ -1,3 +1,8 @@
+/*
+* 자바 프로그램의 기본 구조를 알기 위한 예제
+* 클래스 Hello안에 sum 메소드를 두고, main에서 이를 호출하도록 하여, 문자와 문자열, 정수를 화면에 출력한다.
+*/
+
 package Chapter2;
 
 public class Hello {
