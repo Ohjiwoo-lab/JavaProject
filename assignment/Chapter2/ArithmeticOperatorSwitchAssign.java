@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class ArithmeticOperatorSwitchAssign {
     public static void main(String[] args){
+        //if-else 문에서와 동일한 프로세스로 진행된다.
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("연산>>");
