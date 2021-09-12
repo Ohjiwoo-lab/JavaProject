@@ -15,43 +15,14 @@ public class MiddleNumAssign {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
 
-        int max, median, min;
-        if(a > b){
-            if(a > c) {
-                max = a;
-                if (b > c) {
-                    median = b;
-                    min = c;
-                }
-                else {
-                    median = c;
-                    min = b;
-                }
-            }
-            else {
-                max = c;
-                median = a;
-                min = b;
-            }
-        }
-        else{
-            if(b > c) {
-                max = b;
-                if(a > c){
-                    median = a;
-                    min = c;
-                }
-                else{
-                    median = c;
-                    min = a;
-                }
-            }
-            else {
-                max = c;
-                median = b;
-                min = a;
-            }
-        }
+        int median;
+        if(((a > b) && (c > a)) || ((b > a) && (a > c)))
+            median = a;
+        else if(((b > a) && (c > b)) || ((a > b) && (b > c)))
+            median = b;
+        else
+            median = c;
+
         System.out.println("중간값은 " + median);
         scanner.close();
     }
