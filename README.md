@@ -1,8 +1,8 @@
 # Java로 문제 풀이
 
 - 2021년 오픈소스 개발 프로젝트 과제 업드로용 저장소
-- src 폴더에 강의자료 예제 코드와 실습과제 코드를 모두 업로드하였습니다.
+- src 폴더에 강의자료 예제 코드, assignment 폴더에 실습과제 코드를 업로드하였습니다.
 - result 폴더에는 코드를 실행하였을 때의 화면을 캡쳐하여 정리한 한글파일을 업로드하였습니다.
 
 ### 과제 확인할 때
-2장의 경우로 예를 들면, 강의자료 예제 코드는 src 폴더의 Chapter2 패키지에 있으며, 과제의 경우 src 폴더의 Chapter2-assign 패키지에 있습니다. 강의자료 예제 코드 실행결과는 result 폴더의 Chapter2.hwp 파일에 있고, 과제의 실행결과는 result 폴더의 Chapter2-assign.hwp 파일에 있습니다.
+2장의 경우로 예를 들면, 강의자료 예제 코드는 src 폴더의 Chapter2 패키지에 있으며, 과제의 경우 assignment 폴더의 Chapter2 패키지에 있습니다. src 폴더와 assignment 폴더에 있는 패키지가 모두 Chapter2로 같아 해당 패키지에 있는 자바 파일 이름이 같으면 문제가 생길 수 있다고 판단하여, assignment를 할 때에는 자바 파일 뒤에 Assign을 붙여 구분하였습니다. 또한 강의자료 예제 코드 실행결과는 result 폴더의 Chapter2.hwp 파일에 있고, 과제의 실행결과는 result 폴더의 Chapter2-assignment.hwp 파일에 있습니다. 이를 참고하여 과제를 확인해주시면 감사드리겠습니다:)
