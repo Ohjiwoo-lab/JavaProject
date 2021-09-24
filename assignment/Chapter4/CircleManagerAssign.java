@@ -1,6 +1,7 @@
 /*
  * [과제 6번] 5번 문제의 Circle 클래스와 CircleManager 클래스를 수정하여 실행 결과가 나오도록 한다.
  * 이름을 바꾸어 CircleAssign과 CircleManagerAssign 클래스로 만들어서 프로그램을 작성하였다.
+ * 원에 대한 정보를 입력받고, 가장 면적이 큰 원을 출력하는 프로그램이다.
  */
 
 package Chapter4;
