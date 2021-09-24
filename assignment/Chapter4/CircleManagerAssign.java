@@ -19,7 +19,12 @@ class CircleAssign {
 
     //객체 정보를 출력하는 메소드
     public void show(){
-        System.out.println("(" + x + "," + y + ")" + radius);
+        System.out.print("(" + x + "," + y + ")" + radius);
+    }
+
+    //원의 면적을 리턴하는 메소드(이걸로 가장 면적이 큰 원을 선택할 것이다)
+    public double square(){
+        return 3.14 * radius * radius;
     }
 }
 
@@ -38,9 +43,18 @@ public class CircleManagerAssign {
             c[i] = new CircleAssign(x, y, radius);  //CircleAssign 객체 생성
         }
 
-        for(int i = 0; i < c.length; i++){
-            c[i].show();
+        double max = c[0].square();  //가장 처음 원의 면적을 max로 설정
+        int num = 0;  //max에 해당하는 인덱스 저장
+
+        //for문을 돌며 max보다 크다면 max에 해당하는 인덱스 num에 새로운 인덱스로 업데이트함(for문을 전부 돌고나면 num에는 max에 해당하는 객체의 인덱스가 있을 것이다)
+        for(int i = 1; i < c.length; i++){
+            if(c[i].square() > max)
+                num = i;
         }
+
+        System.out.print("가장 면적이 큰 원은 ");
+        c[num].show();  //max에 해당하는 객체의 인덱스 num을 이용하여 show 메소드를 이용해 원의 정보를 출력한다.
+        System.out.println(" 입니다.");
 
         scanner.close();
     }
