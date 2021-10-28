@@ -18,4 +18,5 @@
   > Chapter3 - 🍕, #1   
   > Chapter4 - 🍑, #2   
   > Chapter5 - 😊, #3   
-  > Chapter6 - 📝, #4
+  > Chapter6 - 📝, #4   
+  > Chapter7 - 🐈, #5
