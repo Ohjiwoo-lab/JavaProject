@@ -25,8 +25,8 @@ public class IteratorEx {
         // Iterator를 이용하여 모든 정수 더하기
         int sum = 0;
         it = v.iterator(); // Iterator 객체 얻기
-        while(it.hasNext()) {
-            int n = it.next();  // 다음으로 이동
+        while(it.hasNext()) {  // Iterator를 다음으로 이동해가면서 null이 될때까지 반복
+            int n = it.next();  // Iterator가 가리키는 요소를 리턴
             sum += n;  // 정수를 sum에 더함
         }
         System.out.println("벡터에 있는 정수 합 : " + sum);  // 정수의 합 출력
