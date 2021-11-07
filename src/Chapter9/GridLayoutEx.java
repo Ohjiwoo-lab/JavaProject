@@ -36,6 +36,7 @@ public class GridLayoutEx extends JFrame {
         setSize(300, 200);
         setVisible(true);
     }
+
     public static void main(String[] args) {
         new GridLayoutEx();
     }

@@ -29,5 +29,4 @@ public class BorderLayoutEx extends JFrame {
     public static void main(String[] args) {
         new BorderLayoutEx();
     }
-
 }
