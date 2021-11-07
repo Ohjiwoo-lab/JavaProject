@@ -8,7 +8,7 @@ package Chapter9;
 import javax.swing.*;
 import java.awt.*;
 
-// 상단의 프레임
+// 상단의 패널
 class NorthPanel extends JPanel{
     public NorthPanel() {
         setBackground(Color.LIGHT_GRAY);  // 배경 회색
@@ -20,7 +20,7 @@ class NorthPanel extends JPanel{
     }
 }
 
-// 중간 프레임
+// 중간 패널
 class CenterPanel extends JPanel{
     public CenterPanel() {
         setLayout(null);
@@ -28,7 +28,7 @@ class CenterPanel extends JPanel{
             int x = (int)(Math.random()*450);
             int y = (int)(Math.random()*450);
             JLabel label=new JLabel("*");  // 레이블에 * 출력
-            label.setForeground(Color.RED);  // * 색상 빨간색으로 설정
+            label.setForeground(Color.RED);  // '*' 색상을 빨간색으로 설정
             label.setLocation(x,y);
             label.setSize(20, 20);
             label.setOpaque(true);
@@ -37,7 +37,7 @@ class CenterPanel extends JPanel{
     }
 }
 
-// 하단의 프레임
+// 하단의 패널
 class SouthPanel extends JPanel{
     public SouthPanel() {
         setBackground(Color.YELLOW);  // 배경 노란색
@@ -52,9 +52,11 @@ public class Homework8 extends JFrame{
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        NorthPanel northPanel=new NorthPanel();  // 상단의 프레임
-        CenterPanel centerPanel=new CenterPanel();  // 중간 프레임
-        SouthPanel southPanel=new SouthPanel();  // 하단의 프레임
+        NorthPanel northPanel=new NorthPanel();  // 상단의 패널
+        CenterPanel centerPanel=new CenterPanel();  // 중간 패널
+        SouthPanel southPanel=new SouthPanel();  // 하단의 패널
+
+        // 패널을 프레임에 추가
         add(northPanel, BorderLayout.NORTH);
         add(southPanel, BorderLayout.SOUTH);
         add(centerPanel);
