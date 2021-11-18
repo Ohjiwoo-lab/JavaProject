@@ -22,3 +22,4 @@
   > Chapter7 - 🐈, #5   
   > Chapter8 - 🎨, #6   
   > Chapter9 - 🎁, #7   
+  > Chapter10 - 🎃, #8   
