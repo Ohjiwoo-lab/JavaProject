@@ -22,9 +22,9 @@ public class KeyListenerEx extends JFrame {
         c.addKeyListener(new MyKeyListener());  // 리스너 생성
 
         keyMessage = new JLabel [3];
-        keyMessage[0] = new JLabel(" getKeyCode() ");  // 키의 유니코드
-        keyMessage[1] = new JLabel(" getKeyChar() ");  // 키의 가상 키 값
-        keyMessage[2] = new JLabel(" getKeyText() ");  // 키 이름 문자열
+        keyMessage[0] = new JLabel(" getKeyCode() ");   // 키의 가상 키 값
+        keyMessage[1] = new JLabel(" getKeyChar() ");   // 키의 유니코드
+        keyMessage[2] = new JLabel(" getKeyText() ");   // 키 이름 문자열
 
         for(int i=0; i<keyMessage.length; i++) {
             c.add(keyMessage[i]);
@@ -42,9 +42,9 @@ public class KeyListenerEx extends JFrame {
         public void keyPressed(KeyEvent e) {
             int keyCode = e.getKeyCode();
             char keyChar = e.getKeyChar();
-            keyMessage[0].setText(Integer.toString(keyCode));  // 유니코드로 변환
-            keyMessage[1].setText(Character.toString(keyChar));  // 가상 키 값으로 변환
-            keyMessage[2].setText(e.getKeyText(keyCode));  // 키 이름 문자열로 변환
+            keyMessage[0].setText(Integer.toString(keyCode));    // 가상 키 값으로 변환
+            keyMessage[1].setText(Character.toString(keyChar));  // 유니코드로 변환
+            keyMessage[2].setText(e.getKeyText(keyCode));        // 키 이름 문자열로 변환
         }
     }
 
